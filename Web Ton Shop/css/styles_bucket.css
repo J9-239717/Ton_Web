@@ -78,7 +78,7 @@ button {
 
 /* Add this to your CSS file */
 .highlight {
-    background-color: yellow; /* Highlight color */
+    background-color: rgb(50, 224, 158); /* Highlight color */
     transition: background-color 2s;
 }
 
@@ -107,4 +107,53 @@ button {
 
 .ConfirmButton:hover {
     background-color: #45a049;
+}
+
+form label {
+    font-weight: bold;
+    margin-right: 5px; /* Added for improved label styling */
+}
+
+form select, form input[type="number"] {
+    padding: 5px; /* Added for better input styling */
+    border: 3px solid #7cd5ff; /* Added for better input styling */
+    border-radius: 4px; /* Added for better input styling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Added margin-top for spacing */
+}
+
+th {
+    background-color: #5f79ff; /* Changed background color for table header */
+    color: white; /* Changed text color for table header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #a5d5f8; /* Added alternate row coloring */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Added for better button styling */
+    background-color: #22476b; /* Changed button color */
+    color: white;
+    font-size: 1em; /* Added for better button styling */
+}
+
+button:hover {
+    background-color: #b3d7fa; /* Changed hover color */
+}
+
+.delete-button {
+    background-color: #f44336; /* Added for delete button */
+}
+
+.delete-button:hover {
+    background-color: #e53935; /* Added hover color for delete button */
 }
