@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #8db0f2;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+    display: flex;  /* Added */
+    justify-content: space-around;  /* Added */
+    align-items: flex-start;  /* Added */
+}
+
+.center-text {
+    text-align: center;
+    color: white;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20%;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;  /* Adjusted width */
+}
+
+.product-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-details a {
+    color: #000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-details p {
+    text-align: right;
+    margin: 0;
+}
+
+/* General styling for the form section */
+.product-order {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Styling for the form header */
+.product-order h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* General styling for the form labels and inputs */
+.product-order label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Styling for select and input fields */
+.product-order select,
+.product-order input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling for the add to order button */
+.product-order button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Basic styling for the button */
+#showNotificationButton {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Styling for the notification message */
+.notification-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745; /* Green color for "Done" message */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show the notification */
+.notification-message.show {
+    opacity: 1;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Products Order</title>
+    <link rel="stylesheet" href="css/styles_bucket.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="volleyball.html">Volleyball</a></li>
+                <li><a href="badminton.html">Badminton</a></li>
+                <li><a href="basketball.html" >Basketball</a></li>
+                <li class="bucket"><a href="bucket.html"class="active">Bucket</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Sports Products Order</h1>
+        <form id="productForm">
+            <label for="sport">Sport:</label>
+            <select id="sport" name="sport">
+                <option value="1">Volleyball</option>
+                <option value="2">Basketball</option>
+                <option value="3">Badminton</option>
+            </select>
+            <label for="item">Item:</label>
+            <select id="item" name="item">
+                <option value="1">Shoes</option>
+                <option value="2">Shirt</option>
+                <option value="3">Pants</option>
+                <option value="4">Ball</option>
+                <option value="5">Set of Pants and Shirt</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <button type="button" onclick="addProduct()">Add Product</button>
+        </form>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Sport</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button class="ConfirmButton" onclick="confirmOrder()">Confirm Order</button>
+        <div id="totalPrice"></div>
+        <script src="js/script_bucket.js"></script>
+    </main>
+</body>
+    
+</html>

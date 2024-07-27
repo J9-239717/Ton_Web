@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Store</title>
+    <link rel="stylesheet" href="css/styles_basket.css">
+    <div id="messageContainer"></div>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="volleyball.html">Volleyball</a></li>
+                <li><a href="badminton.html">Badminton</a></li>
+                <li><a href="basketball.html" class="active">Basketball</a></li>
+                <li class="bucket"><a href="bucket.html">Bucket</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="center-text">Basketball Store</h1>
+    <main>
+        
+        <section class="product-list">
+            <div class="product-item">
+                <img src="images/shoesBK.png" alt="Shoes">
+                <div class="product-details">
+                    <a>Show detail</a>
+                    <p>Price: 1.000.000 kip</p>
+                    <p>Made in China</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/shirtBK.png" alt="Shirt">
+                <div class="product-details">
+                    <a>Show detail</a>
+                    <p>Price: 65.000 kip</p>
+                    <p>Made in China</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/pantsBK.png" alt="Pants">
+                <div class="product-details">
+                    <a>Show detail</a>
+                    <p>Price: 50.000 kip</p>
+                    <p>Made in China</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/bas.jpg" alt="Ball">
+                <div class="product-details">
+                    <a>Show detail</a>
+                    <p>Price: 500.000 kip</p>
+                    <p>Made in China</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-order">
+            <h2>Add to Order</h2>
+            <form id="productForm">
+                <input type="hidden" id="sport" value="2">
+                <label for="item">Item:</label>
+                <select id="item" name="item">
+                    <option value="1">Shoes</option>
+                    <option value="2">Shirt</option>
+                    <option value="3">Pants</option>
+                    <option value="4">Ball</option>
+                    <option value="5">Set of Pants and Shirt</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button id="showNotificationButton" type="button" onclick="addProduct()">Add to Order</button>
+            </form>
+        </section>
+        <script src="js/script_bucket.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="volleyball.html">Volleyball</a></li>
+                <li><a href="badminton.html">Badminton</a></li>
+                <li><a href="basketball.html">Basketball</a></li>
+                <li class="bucket"><a href="bucket.html">Bucket</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <a href="badminton.html">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/slide1.jpg" class="slide-image" onclick="">
+                    <div class="text">Badminton</div>
+                </a>
+                </div>
+
+                <div class="slide fade">
+                <a href="basketball.html">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/slide2.jpg" class="slide-image">
+                    <div class="text">Basketball</div>
+                </a>
+                </div>
+
+                <div class="slide fade">
+                    <a href="volleyball.html">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/slide3.jpg" class="slide-image">
+                    <div class="text">Volleyball</div>
+                </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+
+        <section class="sports">
+            <a href="volleyball.html" class="sport">
+                <div class="icon"><img src="images/volley.png" alt="Ball"></div>
+                <h3>Volleyball</h3>
+            </a>
+            <a href="badminton.html" class="sport">
+                <div class="icon"><img src="images/wing.png" alt="Shuttlecock"></div>
+                <h3>Badminton</h3>
+            </a>
+            <a href="basketball.html" class="sport">
+                <div class="icon"><img src="images/bas.jpg" alt="Ball"></div>
+                <h3>Basketball</h3>
+            </a>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
