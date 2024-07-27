@@ -35,6 +35,11 @@ function addProduct() {
     const sport = parseInt(document.getElementById('sport').value);
     const item = parseInt(document.getElementById('item').value);
     const quantity = parseInt(document.getElementById('quantity').value);
+     // Check if quantity is valid
+    if (isNaN(quantity) || quantity <= 0) {
+        alert("Please enter a valid quantity.");
+        return; // Stop the function execution
+    }
     const price = getPrice(item);
 
     const product = {
